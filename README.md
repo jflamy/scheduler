@@ -1,12 +1,16 @@
-# Nested Monte Carlo Search
+# Weightlifting meet scheduling using Nested Monte Carlo Search
 
-## A generic implementation of a Nested Monte Carlo Search for single player games
+Experiment using NMCS to perform scheduling.
 
-A Nested Monte Carlo Search is a promising approach to find good solutions for complex single player games such as SameGame.
-
-How does it work?
-
-And how can it be implemented in a generic way so that it can be adapted to other problems, games or puzzles?
+This views the schedule as a one-player game. The intent is as follows:
+- an initial schedule is provided
+- an initial list of athletes is provided with their categories (age groups and entry totals)
+- athlete are brute-forced assigned to groups, descending from A, B to C.
+- overflow sessions are used to handle athletes that do no fit naturally in a group. These contain
+  athletes from several categories and would typically lift first.
+  
+The game is to fit the groups to the scheduled slots. The allowed game moves are moving athletes from one group
+to another to improve the "score".  A game is won when all athletes are placed according to constraints.
 
 [Read more](http://blog.leifbattermann.de/2016/06/05/nested-monte-carlo-search/)
 
