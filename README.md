@@ -14,11 +14,13 @@ Creating the initial state:
 Allowed moves:
  - moving athletes from one group to another
  - creating another group
+ - moving group from one platform to another.
 
 The scoring function applies to legal states and makes 
 - it better to have a full A group from a single category.
 - it better to minimize the number of groups over which athletes are spread
 - it better to have a "denser" set of entry totals
+- it better to have fuller days and start/end with a partial day.
 
 
 The game is to fit the groups to the scheduled slots.
